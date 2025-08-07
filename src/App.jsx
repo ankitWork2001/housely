@@ -320,7 +320,7 @@ function App() {
               everyone together in one place, for free.
             </p>
 
-            <button className="bg-[#81B5CA]  text-white font-semibold py-3 px-8 rounded-full  mt-8 cursor-pointer cursor-pointer hover:bg-[#6a9db0] transition-colors duration-300">
+            <button className="bg-[#81B5CA]  text-white font-semibold py-3 px-8 rounded-full  mt-8  cursor-pointer hover:bg-[#6a9db0] transition-colors duration-300">
               Learn More
             </button>
           </div>
@@ -331,16 +331,16 @@ function App() {
       <section className="py-12  bg-white flex justify-center items-center">
         <div className="max-w-[1218px] w-full mx-auto px-6">
           <div className="relative w-[1218px] h-[424px] rounded-[30px] shadow-lg overflow-hidden">
-            {/* ✅ Background Image */}
+            {/*  Background Image */}
             <div
               className="absolute inset-0 bg-cover bg-center rounded-[30px]"
               style={{ backgroundImage: `url(${laptopImage})` }}
             ></div>
 
-            {/* ✅ Black overlay */}
+            {/* Black overlay */}
             <div className="absolute inset-0 bg-black/40 rounded-[30px]"></div>
 
-            {/* ✅ Content */}
+            {/*  Content */}
             <div className="relative z-10 flex flex-col justify-center items-center h-full text-white p-6">
               <h4 className="text-[28px] font-bold mb-2 text-center">
                 Ready To List Your Property?
