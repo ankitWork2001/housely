@@ -3,9 +3,26 @@
 
 @theme {
 
-    --color-lightBtn:#81B5CA;
-    --color-darkBg:#000000;
-    --color-textLight:#ffffff; 
-    --color-textDark:#ffffff; 
+    --color-lightBtn: #81B5CA;
+    --color-darkBg: #000000;
+    --color-lightBg: #ffffff;
+    --color-textLight: #ffffff;
+    --color-textDark: #ffffff;
+    --color-cardBg:#474747
 
+}
+
+
+@layer utilities {
+  .bg-login-bg {
+    background-image: url('/img/loginBg.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+   .bg-sign-bg {
+    background-image: url('/img/signupBg.png');
+    background-size: cover;
+    background-position: center;
+  }
 }
