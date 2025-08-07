@@ -30,7 +30,7 @@ const Booking = () => {
             {/* Tabs Header */}
             <div className="flex justify-between border-b border-gray-600 pb-2 mb-10">
                 {['Basic Details', 'Location Details', 'Property Profile', 'Photos And Videos'].map((label, index) => (
-                    <div key={index} className={`text-2xl font-semibold px-10 py-3 rounded-full ${step === index + 1 ? 'text-white' : 'text-white'} ${step === index + 1 ? 'bg-red-700' : 'bg-none'}`}>
+                    <div key={index} className={`text-2xl font-semibold px-10 py-3 rounded-full ${step === index + 1 ? 'text-lightBtn' : 'text-white'} ${step === index + 1 ? 'bg-white' : 'bg-none'}`}>
                         {label}
                     </div>
                 ))}
@@ -40,7 +40,7 @@ const Booking = () => {
             {step === 1 && (
                 <div className="space-y-6">
                     <div>
-                        <p className="text-3xl font-medium">I Am Looking For</p>
+                        <p className="text-4xl font-medium">I Am Looking For</p>
                         <div className="flex gap-2 flex-wrap mt-6">
                             {['Sell', 'Rent/Lease', 'PG', 'Buy'].map((option) => (
                                 <button
@@ -54,8 +54,8 @@ const Booking = () => {
                         </div>
                     </div>
 
-                    <div>
-                        <p className="text-3xl font-medium">What Kind Of Property You Have Or Looking For?</p>
+                    <div className="mt-16">
+                        <p className="text-4xl font-medium">What Kind Of Property You Have Or Looking For?</p>
                         <div className="flex gap-8 mt-6">
                             {['Residential', 'Commercial', 'Shop'].map((option) => (
                                 <label key={option} className="flex items-center gap-4 cursor-pointer">
@@ -93,9 +93,9 @@ const Booking = () => {
             )}
 
             {step === 2 && (
-                <div className="space-y-4">
+                <div className="space-y-6">
+                    <p className="text-4xl font-medium mb-12">Where Property Located Or Looking For?</p>
                     <div className="w-[30vw]">
-                        <p className="text-2xl font-medium mb-6">Where Property Located Or Looking For?</p>
                         <div className="flex flex-col gap-8">
                             <input
                                 type="text"
@@ -125,25 +125,25 @@ const Booking = () => {
 
             {step === 3 && (
                 <div className="space-y-4">
-                    <p className="text-3xl font-medium mb-6">Tell Us About Property Located Or Looking For?</p>
+                    <p className="text-4xl font-medium mb-12">Tell Us About Property Located Or Looking For?</p>
                     <div className="w-[30vw]">
                         <div>
-                            <span className="text-2xl">Your Property is ?</span>
+                            <span className="text-3xl">Your Property is ?</span>
                             <input
                                 type="text"
                                 placeholder="Your Property Is?"
-                                className="w-full px-4 py-2 rounded bg-white text-black mb-6 mt-4"
+                                className="w-full px-4 py-2 rounded bg-white text-black mb-6 mt-4 text-xl"
                                 value={formData.propertyTitle}
                                 onChange={(e) => handleChange('propertyTitle', e.target.value)}
                             />
                         </div>
 
                         <div className="flex flex-col">
-                            <span className="text-2xl">Your Property is ?</span>
+                            <span className="text-3xl">Your Property is ?</span>
                             <input
                                 type="text"
                                 placeholder="Carpet Area"
-                                className="flex-1 px-4 py-2 rounded bg-white text-black mb-6 mt-4"
+                                className="flex-1 px-4 py-2 rounded bg-white text-black mb-6 mt-4 text-xl"
                                 value={formData.carpetArea}
                                 onChange={(e) => handleChange('carpetArea', e.target.value)}
                             />
@@ -187,26 +187,26 @@ const Booking = () => {
                         ))}
                     </div>
 
-                    <div className="flex gap-2">
+                    <div className="flex flex-col gap-2 w-80 mt-16">
+                        <p className="text-3xl font-medium mb-6">Furnishing?</p>
                         <input
                             type="text"
                             placeholder="Price"
-                            className="flex-1 px-4 py-2 rounded bg-white text-black"
+                            className="flex-1 px-4 py-2 rounded bg-white text-black text-xl"
                             value={formData.price}
                             onChange={(e) => handleChange('price', e.target.value)}
                         />
-                        <span>Per Sq Ft</span>
                     </div>
                 </div>
             )}
 
             {step === 4 && (
                 <div className="space-y-4">
-                    <p className="text-lg font-medium">Photo Or Video Of Property?</p>
+                    <p className="text-4xl font-medium mb-8">Photo Or Video Of Property?</p>
                     <input
                         type="text"
                         placeholder="Your Property Photo?"
-                        className="w-full px-4 py-2 rounded bg-white text-black"
+                        className="w-80 px-4 py-2 text-xl rounded bg-white text-black"
                         value={formData.photo}
                         onChange={(e) => handleChange('photo', e.target.value)}
                     />
@@ -217,9 +217,9 @@ const Booking = () => {
             <div className="flex justify-between w-full mt-14">
                 {step > 1 && (
                     <button
-                    className="px-6 py-2 rounded-full text-2xl bg-lightBtn hover:bg-blue-500 text-white font-medium"
-                    onClick={back}>
-                    Back
+                        className="px-6 py-2 rounded-full text-2xl bg-lightBtn hover:bg-blue-500 text-white font-medium"
+                        onClick={back}>
+                        Back
                     </button>
                 )}
                 <button
