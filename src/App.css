@@ -9,3 +9,11 @@
     --color-textDark:#000000; 
 
 }
+
+
+@layer utilities {
+  .bg-booking-bg {
+    background-image: url('/img/booking.png');
+    background-size: cover;
+    background-position: center;
+  }}

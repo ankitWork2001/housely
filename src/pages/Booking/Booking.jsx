@@ -26,7 +26,7 @@ const Booking = () => {
     const back = () => setStep((prev) => Math.max(prev - 1, 1));
 
     return (
-        <div className="w-full min-h-[100vh] mx-auto px-50 py-20 text-white bg-gray-700">
+        <div className="w-full min-h-[100vh] bg-booking-bg mx-auto px-50 py-20 text-white bg-gray-700">
             {/* Tabs Header */}
             <div className="flex justify-between border-b border-gray-600 pb-2 mb-10">
                 {['Basic Details', 'Location Details', 'Property Profile', 'Photos And Videos'].map((label, index) => (
@@ -214,10 +214,12 @@ const Booking = () => {
             )}
 
             {/* Navigation Buttons */}
-            <div className="flex justify-between mt-14">
+            <div className="flex justify-between w-full mt-14">
                 {step > 1 && (
-                    <button className="text-sm text-white underline" onClick={back}>
-                        ← Back
+                    <button
+                    className="px-6 py-2 rounded-full text-2xl bg-lightBtn hover:bg-blue-500 text-white font-medium"
+                    onClick={back}>
+                    Back
                     </button>
                 )}
                 <button
