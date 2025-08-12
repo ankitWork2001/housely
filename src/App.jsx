@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router';
 
 // pages are imported here 
 import Test from "./pages/Test.jsx"
+import Booking from './pages/Booking/Booking.jsx';
 
 
 //auth pages are here 
@@ -19,7 +20,10 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<SignUp />} />
 
-          {/* Nested Route: Dashboard has children -*---*/}
+
+          {/* Bookign routes are here  */}
+          <Route path="/booking" element={<Booking/>} />
+
           
         </Routes>
       </BrowserRouter>

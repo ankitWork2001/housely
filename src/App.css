@@ -6,5 +6,19 @@
     --color-lightBtn:#81B5CA;
     --color-darkBg:#000000;
     --color-textLight:#ffffff; 
+<<<<<<< HEAD
     --color-textDark:#ffffff; 
 }
+=======
+    --color-textDark:#000000; 
+
+}
+
+
+@layer utilities {
+  .bg-booking-bg {
+    background-image: url('/img/booking.png');
+    background-size: cover;
+    background-position: center;
+  }}
+>>>>>>> features/booking

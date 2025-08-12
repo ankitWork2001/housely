@@ -14,6 +14,7 @@
 
 
 @layer utilities {
+<<<<<<< HEAD
   .bg-login-bg {
     background-image: url('/img/loginBg.png');
     background-size: cover;
@@ -26,3 +27,10 @@
     background-position: center;
   }
 }
+=======
+  .bg-booking-bg {
+    background-image: url('/img/booking.png');
+    background-size: cover;
+    background-position: center;
+  }}
+>>>>>>> features/booking
