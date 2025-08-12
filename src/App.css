@@ -3,11 +3,11 @@
 
 @theme {
 
-    --color-lightBtn:#81B5CA;
-    --color-darkBg:#000000;
-    --color-textLight:#ffffff; 
-    --color-textDark:#ffffff; 
-    --color-textDark:#000000; 
+  --color-lightBtn: #81B5CA;
+  --color-darkBg: #000000;
+  --color-textLight: #ffffff;
+  --color-textDark: #ffffff;
+  --color-textDark: #000000;
 }
 
 
@@ -17,4 +17,18 @@
     background-image: url('/img/booking.png');
     background-size: cover;
     background-position: center;
-  }}
+  }
+}
+
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE/Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
