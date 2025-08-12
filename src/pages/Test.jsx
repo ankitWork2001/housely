@@ -7,7 +7,8 @@ const Test = () => {
   return (
     <div>
       <Navbar />
-      <Home />
+      {/* ---home page is here */}
+      <Home/> 
       <Footer />
     </div>
   );
