@@ -19,7 +19,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<SignUp />} />
 
-          {/* Nested Route: Dashboard has children */}
+          {/* Nested Route: Dashboard has children -*---*/}
           
         </Routes>
       </BrowserRouter>
