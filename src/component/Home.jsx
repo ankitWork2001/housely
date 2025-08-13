@@ -77,50 +77,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      {/* <header className="bg-white border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <h1 className="text-2xl font-bold text-blue-600">PropertyHub</h1>
-            </div>
-            <nav className="hidden md:flex space-x-8">
-              <a
-                href="#"
-                className="text-gray-600 hover:text-blue-600 font-medium"
-              >
-                Home
-              </a>
-              <a
-                href="#"
-                className="text-gray-600 hover:text-blue-600 font-medium"
-              >
-                Properties
-              </a>
-              <a
-                href="#"
-                className="text-gray-600 hover:text-blue-600 font-medium"
-              >
-                Services
-              </a>
-              <a
-                href="#"
-                className="text-gray-600 hover:text-blue-600 font-medium"
-              >
-                About
-              </a>
-              <a
-                href="#"
-                className="text-gray-600 hover:text-blue-600 font-medium"
-              >
-                Contact
-              </a>
-            </nav>
-            <Button className="bg-blue-600 hover:bg-blue-700 px-6">
-              Sign In
-            </Button>
-          </div>
-        </div>
-      </header> */}
+     
 
       {/* Hero Section */}
       <section className="max-w-7xl h-[407px] mx-auto px-6  mt-2 relative bg-white">
