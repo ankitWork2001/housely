@@ -8,6 +8,9 @@ import Booking from "./pages/Booking/Booking.jsx";
 import Login from "./pages/auth/Login.jsx";
 import SignUp from "./pages/auth/SignUp.jsx";
 
+// property page is here 
+import PropertyList from './pages/Property/PropertyList.jsx';
+
 function App() {
   return (
     <>
@@ -19,6 +22,13 @@ function App() {
 
           {/* Bookign routes are here  */}
           <Route path="/booking" element={<Booking />} />
+          <Route path="/booking" element={<Booking/>} />
+
+          {/* property pages are here  */}
+          <Route path="/property-list" element={<PropertyList/>} />
+
+
+          
         </Routes>
       </BrowserRouter>
     </>

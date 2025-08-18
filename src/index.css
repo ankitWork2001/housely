@@ -7,8 +7,10 @@
     --color-darkBg: #000000;
     --color-lightBg: #ffffff;
     --color-textLight: #ffffff;
-    --color-textDark: #ffffff;
-    --color-cardBg:#474747
+    --color-textDark: #000000;
+    --color-cardBg:#474747;
+    --color-cardProBg:#EDEDED;
+
 
 }
 
