@@ -6,10 +6,8 @@ import Home from "../component/Home";
 const Test = () => {
   return (
     <div>
-      <Navbar />
       {/* ---home page is here */}
       <Home/> 
-      <Footer />
     </div>
   );
 };

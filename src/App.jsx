@@ -11,12 +11,16 @@ import SignUp from "./pages/auth/SignUp.jsx";
 // property page is here 
 import PropertyList from './pages/Property/PropertyList.jsx';
 
+// others pages are imported here 
+import Layout from "./pages/Other/Outlet.jsx"
+
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Test />} />
+          <Route path="/" element={<Layout/>}>
+          <Route index element={<Test />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<SignUp />} />
 
@@ -27,8 +31,7 @@ function App() {
           {/* property pages are here  */}
           <Route path="/property-list" element={<PropertyList/>} />
 
-
-          
+          </Route>
         </Routes>
       </BrowserRouter>
     </>
